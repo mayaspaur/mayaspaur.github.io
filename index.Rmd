@@ -4,7 +4,6 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 # This is Jeff's awesome website
@@ -13,7 +12,7 @@ output:
 
 #let's add links
 
-I often use [google](google.com) to do data science.
+I often use [google](https://www.google.com) to do data science.
 
 
 
