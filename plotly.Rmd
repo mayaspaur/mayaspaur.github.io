@@ -1,0 +1,17 @@
+---
+title: "plotly"
+author: "Maya Spaur"
+date: "10/22/2019"
+output: 
+  html_document:
+toc: true
+toc_float: true
+---
+
+```{r setup}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
