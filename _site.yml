@@ -3,9 +3,9 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
+    - text: "about"
       href: about.html
-    - text: "Plotly"
+    - text: "plotly"
       href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:<mayaamiga@comcast.net>
