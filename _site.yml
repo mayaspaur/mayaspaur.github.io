@@ -5,7 +5,9 @@ navbar:
   right:
     - text: "About"
       href: about.html
-    - text: "plotly"
+    - text: "Plotly"
+      href: plotly.html
+    - text: "Dashboard"
       href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:<mayaamiga@comcast.net>
