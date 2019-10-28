@@ -3,11 +3,13 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About"
-      href: about.html
-    - text: Examples
+  - text: "About"
+    href: About.html
+  - text: Examples
+  - text: "Menu"
     menu:
-      href: about.html
+    - text: 
+      href: About.html
     - text: "Plotly"
       href: plotly.html
     - text: "Dashboard"
@@ -15,7 +17,8 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:<mayaamiga@comcast.net>
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: http://github.com/mayaspaur/
+
 output:
   html_document:
     theme: journal

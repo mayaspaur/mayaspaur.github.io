@@ -1,11 +1,51 @@
 ---
-title: "about"
+title: "About"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Jeff's awesome website
+# This is Maya's awesome website
 
 This my about me page.
+
+My name is Maya Spaur.
+
+#EDUCATION  
+
+Columbia Mailman School of Public Health—New York, NY				 Start: Sept 2019
+•PhD Student in Environmental Health Sciences
+
+Johns Hopkins Bloomberg School of Public Health—Baltimore, MD (2019)                                 
+•Master of Science in Environmental Health & Engineering                                                
+•Certificate in Risk Sciences & Public Policy  
+•Certificate in Quantitative Microbial Risk Assessment Interdisciplinary Instructional Institute  
+
+University of Maryland—College Park, MD (2017)                                                         
+•B.S. in Environmental Science & Technology, concentration in Environmental Health  
+•B.A. in Government & Politics  
+•Study Abroad with Center for International Educational Exchange in Monteverde, Costa Rica         June-Aug 2015  
+
+
+#EXPERIENCE
+
+JHSPH Department of Environmental Health & Engineering—Baltimore, MD: Research Assistant for Dr. Meghan Frost Davis  
+
+Earthjustice—New York, New York: Extern
+
+
+Occupational & Environmental Epidemiology Branch, National Cancer Institute—Shady Grove, MD: Summer Fellow for Dr. Mary Ward
+
+
+Maryland Department of Agriculture —College Park: Field Technician  
+
+National Oceanic and Atmospheric Administration—Silver Spring, MD: Hollings Scholar Intern  
+
+
+UMD Department of Environmental Science & Technology—College Park, MD: Research Assistant, Surveyor for Dr. Paul Leisnham   
+
+
+
+
+

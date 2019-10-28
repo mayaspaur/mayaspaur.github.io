@@ -6,9 +6,8 @@ output:
     toc_float: true
 ---
 
-# This is Jeff's awesome website
+# This is Maya's awesome website
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
 
 #let's add links
