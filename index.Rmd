@@ -1,19 +1,13 @@
 ---
-title: "My awesome website"
+title: "My website"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-# This is Maya's awesome website
+# This is Maya Spaur's website
 
-
-
-#let's add links
 
 I often use [google](https://www.google.com) to do data science.
 
-
-
-#Adding multiple pages 
