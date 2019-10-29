@@ -6,47 +6,28 @@ output:
     toc_float: true
 ---
 
-# This is Maya's awesome website
 
-This my about me page.
+<img src="images/image.jpg" style="width:75%">
 
-My name is Maya Spaur.
-
-#EDUCATION  
-
-Columbia Mailman School of Public Health—New York, NY				 Start: Sept 2019
-•PhD Student in Environmental Health Sciences
-
-Johns Hopkins Bloomberg School of Public Health—Baltimore, MD (2019)                                 
-•Master of Science in Environmental Health & Engineering                                                
-•Certificate in Risk Sciences & Public Policy  
-•Certificate in Quantitative Microbial Risk Assessment Interdisciplinary Instructional Institute  
-
-University of Maryland—College Park, MD (2017)                                                         
-•B.S. in Environmental Science & Technology, concentration in Environmental Health  
-•B.A. in Government & Politics  
-•Study Abroad with Center for International Educational Exchange in Monteverde, Costa Rica         June-Aug 2015  
+_Education_
+------------------------------------------------------------------------
 
 
-#EXPERIENCE
+Maya Spaur is a PhD student in the Environmental Health Sciences department at Columbia Mailman School of Public Health, located in New York, NY.
 
-JHSPH Department of Environmental Health & Engineering—Baltimore, MD: Research Assistant for Dr. Meghan Frost Davis  
+She completed her Master of Science (ScM) in Environmental Health & Engineering at Johns Hopkins Bloomberg School of Public Health in Baltimore, MD, in 2019. She has a Certificate in Risk Sciences & Public Policy from JHSPH, as well as a Certificate in Quantitative Microbial Risk Assessment (QMRA) from the QMRA Interdisciplinary Instructional Institute.
 
-Earthjustice—New York, New York: Extern
+She completed a B.S. in Environmental Science & Technology with a concentration in Environmental Health, and a B.A. in Government & Politics, at the University of Maryland in College Park, MD, in 2017.   
 
+_Experience_
+------------------------------------------------------------------------
 
-Occupational & Environmental Epidemiology Branch, National Cancer Institute—Shady Grove, MD: Summer Fellow for Dr. Mary Ward
+Maya worked as a Research Assistant for the environmental microbiology laboratory of Dr. Meghan Frost Davis, at JHSPH, from September 2017 - May 2019. She also worked as an Extern for Earthjustice from October 2018 - June 2019. Maya worked as a Teaching Assistant for the Risk Sciences & Public Policy series during the 2018 - 2019 academic year at JHSPH. Maya also worked as a Summer Fellow for Dr. Mary Ward at the National Cancer Institute, during the summers of 2018 and 2019.
 
+Prior to graduate school, Maya worked as a Field Technician for the Maryland Department of Agriculture Mosquito Control; as a Hollings Scholar intern for the National Oceanic and Atmospheric Administration; and as a Research Assistant and Surveyor for Dr. Paul Leisnham in the department of Environmental Science & Technology at UMD.
 
-Maryland Department of Agriculture —College Park: Field Technician  
-
-National Oceanic and Atmospheric Administration—Silver Spring, MD: Hollings Scholar Intern  
-
-
-UMD Department of Environmental Science & Technology—College Park, MD: Research Assistant, Surveyor for Dr. Paul Leisnham   
-
-
-#Website creation
+_Website Details_
+------------------------------------------------------------------------
 
 This site was made using RStudio Version 1.2.1335. R package versions used are ... It is hosted on github.com, and the website address is: mayasaritaspaur.github.io  
 
