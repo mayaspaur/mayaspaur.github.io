@@ -13,8 +13,6 @@ library(viridis)
 library(p8105.datasets)
 library(plotly)
 
-set.seed(1)
-
 ```
 
 
@@ -22,7 +20,7 @@ set.seed(1)
 #Cleaning the data 
 ```{r}
 rest_inspec = 
-rest_inspec %>%
+  rest_inspec %>%
   janitor::clean_names() %>%
   filter(grade %in% c("A", "B", "C"), boro != "Missing") %>% 
   mutate(boro = str_to_title(boro)) %>%
@@ -37,83 +35,74 @@ Column {data-width=650}
 ### Chart A
 
 ```{r boxplot}
-rest_inspec %>%
-  group_by(boro) %>%
-  ggplot(aes(x = boro, y = score, color = boro)) + geom_boxplot()
-  
+bar_graph =
+rest_inspec %>% 
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar")
+
+bar_graph
 
 ```
 
 
-Column {data-width=350}
 -----------------------------------------------------------------------
 ### Chart B
 
 ```{r}
+bar_graph_A =
+  rest_inspec %>% 
+  filter(grade == "A") %>%
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro, n)) %>% 
+  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar")
 
+bar_graph_A
+
+```
+
+
+-----------------------------------------------------------------------
+### Chart C
+
+```{r}
+boxplot = 
+  rest_inspec %>%
+  mutate(boro = fct_reorder(boro, score)) %>% 
+  plot_ly(y = ~score, color = ~boro, type = "box",
+          colors = "Set2")
 
 
 ````
 
 
-Column {data-width=350}
 -----------------------------------------------------------------------
-### Chart C
+### Chart D
 
 
-
-
-
-
-
-
-
-
-data(nyc_airbnb)
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(
-    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
-  filter(
-    !is.na(rating), 
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500)  %>% 
-  sample_n(5000)
-  
-Column {data-width=650}
------------------------------------------------------------------------
-
-### Chart A
-
-
-nyc_airbnb %>%
-  mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
+```{r}
+line_graph =
+  rest_inspec %>%
+  filter(grade =="A") %>%
+  mutate(year = lubridate::year(inspection_date),
+         year = as.integer(year)) %>%
+  filter(year >= "2000", boro == "Brooklyn" | boro == "Manhattan") %>%
+  group_by(boro, year) %>%
+  mutate(mean_score = mean(score)) %>%
   plot_ly(
-    x = ~lat, y = ~long, type = "scatter", mode = "markers",
-    color = ~price, text = ~text_label, alpha = 0.5)
+    x = ~year, y = ~mean_score, type = "scatter", mode = "line",
+    color = ~boro, alpha = 0.5, colors = "Set2")
+
+line_graph
 
 
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
+```
 
 
-nyc_airbnb %>% 
-  count(neighbourhood) %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
-  plot_ly(x = ~neighbourhood, y = ~n, color = ~neighbourhood, type = "bar")
 
 
-### Chart C
 
 
-nyc_airbnb %>% 
-mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
-  plot_ly(y = ~price, color = ~neighbourhood, type = "box",
-          colors = "Set2")
 
 
 
