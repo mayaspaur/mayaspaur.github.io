@@ -14,7 +14,7 @@ navbar:
     - text: "About"
       href: About.html
     - text: "Dashboard"
-      href: plotly.html
+      href: dashboard.html
     
 output:
   html_document:
