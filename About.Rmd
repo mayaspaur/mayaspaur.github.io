@@ -46,6 +46,12 @@ National Oceanic and Atmospheric Administration—Silver Spring, MD: Hollings Sc
 UMD Department of Environmental Science & Technology—College Park, MD: Research Assistant, Surveyor for Dr. Paul Leisnham   
 
 
+#Website creation
+
+This site was made using RStudio Version 1.2.1335. R package versions used are ... It is hosted on github.com, and the website address is: mayasaritaspaur.github.io  
+
+Source code can be found in the repository titled  mayasaritaspaur.github.io at https://github.com/mayaspaur 
+
 
 
 

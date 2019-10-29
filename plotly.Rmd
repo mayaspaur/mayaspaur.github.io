@@ -32,15 +32,6 @@ rest_inspec %>%
   mutate(boro = as.factor(boro),
          critical_flag = as.ordered(critical_flag))
 
-
-view(rest_inspec)
-
-rest_inspec <- subset(rest_inspec, boro!="Missing")
-
-rest_inspec %>%
-  head(violation_description)
-  
-
 ```
 
 ```{r boxplot}
@@ -52,7 +43,7 @@ rest_inspec %>%
 ```
 
 
-```{r}
+
 set.seed(1)
 
 data(nyc_airbnb)
@@ -69,13 +60,12 @@ nyc_airbnb =
   sample_n(5000)
 
 nyc_airbnb
-```
+
 
 
 Plotting with aesthetic options:
 
-```{r}
-#nyc_airbnb %>%
+nyc_airbnb %>%
   mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
   plot_ly(
     x = ~lat, y = ~long, type = "scatter", mode = "markers",
@@ -85,7 +75,7 @@ Plotting with aesthetic options:
 
 Plotly plots:
 
-```{r}
+
 
 #nyc_airbnb %>%
   mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
@@ -102,4 +92,4 @@ Plotly plots:
 mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
   plot_ly(y = ~price, color = ~neighbourhood, type = "box",
           colors = "Set2")
-```
+

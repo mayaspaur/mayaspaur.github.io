@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -15,6 +15,60 @@ library(plotly)
 
 set.seed(1)
 
+```
+
+
+
+#Cleaning the data 
+```{r}
+rest_inspec = 
+rest_inspec %>%
+  janitor::clean_names() %>%
+  filter(grade %in% c("A", "B", "C"), boro != "Missing") %>% 
+  mutate(boro = str_to_title(boro)) %>%
+  mutate(boro = as.factor(boro),
+         critical_flag = as.ordered(critical_flag))
+
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r boxplot}
+rest_inspec %>%
+  group_by(boro) %>%
+  ggplot(aes(x = boro, y = score, color = boro)) + geom_boxplot()
+  
+
+```
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+### Chart B
+
+```{r}
+
+
+
+````
+
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+### Chart C
+
+
+
+
+
+
+
+
+
+```{r}
 data(nyc_airbnb)
 nyc_airbnb = 
   nyc_airbnb %>% 

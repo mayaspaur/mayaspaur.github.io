@@ -4,21 +4,20 @@ navbar:
   title: "Home"
   right:
   - text: "About"
-    href: About.html
-  - text: Examples
+    href: about.html
+  - icon: fa-envelope fa-lg
+    href: mailto:<mayaamiga@comcast.net> 
+  - icon: fa-github fa-lg
+    href: http://github.com/mayaspaur/
   - text: "Menu"
     menu:
     - text: 
-      href: About.html
+      href: about.html
     - text: "Plotly"
       href: plotly.html
     - text: "Dashboard"
       href: plotly.html
-    - icon: fa-envelope fa-lg
-      href: mailto:<mayaamiga@comcast.net>
-    - icon: fa-github fa-lg
-      href: http://github.com/mayaspaur/
-
+    
 output:
   html_document:
     theme: journal
