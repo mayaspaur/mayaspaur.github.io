@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-#About me
+
 
 <img src="images/image.jpg" style="width:75%">
 
@@ -20,7 +20,7 @@ She completed her Master of Science (ScM) in Environmental Health & Engineering 
 
 She completed a B.S. in Environmental Science & Technology with a concentration in Environmental Health, and a B.A. in Government & Politics, at the University of Maryland in College Park, MD, in 2017.   
 
-_Experience_
+#_Experience_
 ------------------------------------------------------------------------
 
 Maya worked as a Research Assistant for the environmental microbiology laboratory of Dr. Meghan Frost Davis, at JHSPH, from September 2017 - May 2019. She also worked as an Extern for Earthjustice from October 2018 - June 2019. Maya worked as a Teaching Assistant for the Risk Sciences & Public Policy series during the 2018 - 2019 academic year at JHSPH. Maya also worked as a Summer Fellow for Dr. Mary Ward at the National Cancer Institute, during the summers of 2018 and 2019.

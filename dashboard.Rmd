@@ -6,7 +6,18 @@ output:
     vertical_layout: fill
 ---
 
-```{r setup, include=FALSE}
+
+### Introduction
+
+The following data was sourced from the New York City Department of Health and Mental Hygiene (DOHMH) New York City Restaurant Inspection Results database, and obtained from the p8105.datasets package. The DOHMH annually inspects NYC restaurants to assess restaurant compliance with food handling, food temperature, worker personal hygiene, and vermin control regulations. Each regulation violation is assigned a number of points that are summed into a score at the end of the investigation. Scores are used to inform an overall grade; a lower score (fewer regulation violations) rececives a higher grade, with A being the highest grade.
+
+Key variables in this dataset that are explored visually on this page include score, grade, and boro (which indicates which NYC borough the restaurant was located in). Inspection_date reports the date of the inspection; the year was isolated from the inspection_date and was also used to visualize the data below.
+
+-----------------------------------------------------------------------
+
+### _Loading the data_
+
+```{r setup}
 library(flexdashboard)
 library(tidyverse)
 library(viridis)
@@ -16,8 +27,10 @@ library(plotly)
 ```
 
 
+-----------------------------------------------------------------------
 
-#Cleaning the data 
+### _Cleaning the data_
+
 ```{r}
 rest_inspec = 
   rest_inspec %>%
@@ -29,12 +42,13 @@ rest_inspec =
 
 ```
 
-Column {data-width=650}
------------------------------------------------------------------------
+
 
 ### Chart A
 
-```{r boxplot}
+This is a bar graph displaying the total number of restaurant inspections conducted in each borough. 
+
+```{r}
 bar_graph =
 rest_inspec %>% 
   count(boro) %>% 
@@ -46,8 +60,10 @@ bar_graph
 ```
 
 
------------------------------------------------------------------------
+
 ### Chart B
+
+This is a bar graph depicting the number of restaurant inspections that received a grade of A in each borough.
 
 ```{r}
 bar_graph_A =
@@ -62,8 +78,10 @@ bar_graph_A
 ```
 
 
------------------------------------------------------------------------
+
 ### Chart C
+
+This is a boxplot featuring the distribution of scores from the restaurant inspections for each borough.
 
 ```{r}
 boxplot = 
@@ -73,12 +91,13 @@ boxplot =
           colors = "Set2")
 
 
-````
+```
 
 
------------------------------------------------------------------------
+
 ### Chart D
 
+This is a line graph featuring the year and mean score of restaurant inspections that received a grade of A in Manhattan and Brooklyn after 2000.
 
 ```{r}
 line_graph =
