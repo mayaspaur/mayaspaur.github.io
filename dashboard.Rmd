@@ -97,22 +97,21 @@ boxplot =
 
 ### Chart D
 
-This is a line graph featuring the year and mean score of restaurant inspections that received a grade of A in Manhattan and Brooklyn after 2000.
+This is a scatter plot featuring the year and mean score of restaurant inspections that received a grade of A in Manhattan and Brooklyn after 2000.
 
 ```{r}
-line_graph =
+scatter_plot =
   rest_inspec %>%
-  filter(grade =="A") %>%
   mutate(year = lubridate::year(inspection_date),
          year = as.integer(year)) %>%
   filter(year >= "2000", boro == "Brooklyn" | boro == "Manhattan") %>%
   group_by(boro, year) %>%
   mutate(mean_score = mean(score)) %>%
   plot_ly(
-    x = ~year, y = ~mean_score, type = "scatter", mode = "line",
+    x = ~year, y = ~mean_score, type = "scatter", mode = "markers",
     color = ~boro, alpha = 0.5, colors = "Set2")
 
-line_graph
+scatter_plot
 
 
 ```

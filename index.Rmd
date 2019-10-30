@@ -6,8 +6,10 @@ output:
     toc_float: true
 ---
 
-# This is Maya Spaur's website
+
+This is the website for Maya Spaur's HW4 Data Science project. Please select the menu options to learn more, and enjoy this photo I took at El Yunque National Park. 
 
 
-I often use [google](https://www.google.com) to do data science.
+<img src="images/image1.jpg" style="width:75%">
+
 
