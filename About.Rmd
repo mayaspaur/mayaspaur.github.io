@@ -41,9 +41,9 @@ _Experience_
 _Website Details_
 ------------------------------------------------------------------------
 
-This site was made using RStudio Version 1.2.1335. R package versions used are ... It is hosted on github.com, and the website address is: mayasaritaspaur.github.io  
+This site was made using RStudio Version 1.2.1335. It is hosted on github.
 
-Source code can be found in the repository titled  mayasaritaspaur.github.io at https://github.com/mayaspaur 
+Source code can be found in the repository titled  [mayaspaur] (https://github.com/mayaspaur/mayaspaur.github.io)
 
 
 
