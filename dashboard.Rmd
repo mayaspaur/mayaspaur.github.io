@@ -102,8 +102,7 @@ This is a scatter plot featuring the year and mean score of restaurant inspectio
 ```{r}
 scatter_plot =
   rest_inspec %>%
-  mutate(year = lubridate::year(inspection_date),
-         year = as.integer(year)) %>%
+  mutate(year = lubridate::year(inspection_date)) %>%
   filter(year >= "2000", boro == "Brooklyn" | boro == "Manhattan") %>%
   group_by(boro, year) %>%
   mutate(mean_score = mean(score)) %>%

@@ -43,7 +43,7 @@ _Website Details_
 
 This site was made using RStudio Version 1.2.1335. It is hosted on github.
 
-Source code can be found in the repository titled  [mayaspaur] (https://github.com/mayaspaur/mayaspaur.github.io)
+Source code can be found in the repository titled  [mayaspaur](https://github.com/mayaspaur/mayaspaur.github.io)
 
 
 
